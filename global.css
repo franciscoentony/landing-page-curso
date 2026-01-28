@@ -490,6 +490,7 @@ section {
     gap: .8rem;
 }
 .infos-contato-e-formulario .lado-direito form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
