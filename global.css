@@ -1,0 +1,529 @@
+@import url('/src/components/Header/header.css');
+@import url('/src/components/Fazer-Pedido-Button/fazer-pedido.css');
+@import url('/responsividade.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-decoration: none;
+    --dark-green: #00373E;
+    --white-yellow: #FBF6EC;
+}
+body {
+    /*width: 100vw;*/
+    color: var(--dark-green);
+    background-color: var(--white-yellow);
+}
+p{
+    font-size: 14pt;
+}
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0 ;
+    padding: 0;
+}
+a {
+    color: inherit;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-banner{
+    height: 35rem;
+
+}
+.banner {
+    width: 60%;
+    height: 100%;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    justify-content: center;
+
+    border-radius: 2rem;
+
+    background-image: linear-gradient(90deg,rgba(244, 249, 214, 0.80) 0%, rgba(13, 13, 13, 0) 100%), url('/src/assets/funcionario.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.textos-banner{
+    width: 50%;
+    /*border: 1px solid green;*/
+}
+.textos-banner p{
+    width: 75%;
+    font-size: 13pt;
+    /*border: 1px solid green;*/
+}
+.textos-banner h1{
+    font-size: 35pt;
+    line-height: 3rem;
+    margin-bottom: .8rem;   
+}
+.btn-pedido-online{
+    width: 12rem;
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-green);
+    border-radius: 10rem;
+    color: var(--white-yellow);
+
+    transition: all .3s ease;
+}
+.btn-pedido-online:hover{
+    background-color: #02575A;
+}
+.economia {
+    width: 60%;
+    height: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.textos-buttons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.textos-economia{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.textos-economia h1{
+    width: 80%;
+    font-size: 30pt;
+    line-height: 3rem;
+}
+.textos-economia p{
+    font-size: 15pt;
+}
+.porquinho-img {
+    background-color: #209F8A;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10%;
+
+    box-shadow: 1rem -1rem 1rem 0 rgba(0, 0, 0, 0.102) inset;
+}
+.porquinho-img img{
+    width: 40rem;
+    position: relative;
+    bottom: 10rem;
+    right: 8rem;
+}
+.section-servicos {
+    flex-direction: column;
+    align-items: center;
+}
+.servicos{
+    width: 60%;
+    height: auto;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.textos-servicos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.textos-servicos h1 {
+    width: 90%;
+    font-size: 30pt;
+    margin-bottom: 2rem;
+}
+.servicos .boxs{
+    display: flex;
+    gap: 2rem;
+}
+.servicos .box {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+.servicos .box .lado-esquerdo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.servicos .box .lado-esquerdo a {
+    border: 2px solid black;
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+    transition: all .3s ease;
+}
+.servicos .box .lado-esquerdo a:hover {
+    background-color: black;
+    color: var(--white-yellow);
+}
+.servicos .box .imagem {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.servicos .box img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.servicos .box01 {
+    background-color: #F9E6D0;
+}
+.servicos .box02 {
+    background-color: #F9D7D7;
+}
+.whatsapp {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+
+    border-radius: 2rem;
+
+    background-color: white;
+}
+.whatsapp .lado-esquerdo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.whatsapp .imagem {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.whatsapp .imagem img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.whatsapp .textos-whatsapp {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.whatsapp .textos-whatsapp h1 {
+    width: 80%;
+}
+.section-depoimentos {  
+    padding: 3rem 0;
+}
+.depoimentos {
+    width: 60%;
+    height: 20rem;
+    display: flex;
+}
+.textos-e-buttons-depoimentos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textos-e-buttons-depoimentos p {
+    font-size: 13pt;
+    width: 80%;
+}
+.buttons-depoimentos{
+    display: flex;
+    gap: .5rem;
+}
+.btn-depoimento {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 80%;
+    border: none;
+    cursor: pointer;
+}
+.btn-depoimento-left{
+    background-color: white;
+    transition: all .3s ease;
+}
+.btn-depoimento-left:hover{
+    background-color: #e7e7e7;
+}
+.btn-depoimento-right{
+    background-color: var(--dark-green);
+    color: var(--white-yellow);
+    transition: all .3s ease;
+}
+.btn-depoimento-right:hover{
+    background-color: #02575A;
+}
+.avaliacoes {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.comentarios {
+    width: 100%;
+    height: 80%;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.avaliacoes .comentario01 {
+    background-color: #F9E6D0;
+}.avaliacoes .comentario02 {
+    color: var(--white-yellow);
+    background-color: #00373E;
+}
+/*.btn-depoimento-left:hover, .btn-depoimento-right:hover {
+    background-color: #00373E;
+    color: var(--white-yellow);
+}*/
+.ofertas .boxs{
+    display: flex;
+    gap: 1rem;
+}
+.ofertas .box {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    background-color: var(--dark-green);
+    color: var(--white-yellow);
+}
+.ofertas .box a {
+    border: 2px solid #ffe481;
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+    transition: all .3s ease;
+}
+.ofertas .box a:hover {
+    background-color: #ffe481;
+    color: var(--dark-green);
+}
+.section-ofertas {
+    flex-direction: column;
+    align-items: center;
+}
+.ofertas{
+    width: 60%;
+    height: auto;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.section-perguntas {
+    padding: 5rem 0;
+}
+.perguntas {
+    width: 60%;
+    height: 40rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.textos-perguntas {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.perguntas .lado-esquerdo {
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.perguntas .lado-esquerdo .imagem {
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9E6D0;
+    border-radius: 2rem;
+}
+.perguntas .lado-esquerdo .imagem img{
+    width: 60%;
+    height: auto;
+    position: relative;
+    bottom: 4rem;
+    right: 1rem;
+}
+.perguntas-frequentes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.perguntas-frequentes details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.perguntas-frequentes summary{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.perguntas-frequentes summary:hover {
+    background-color: #f0f0f0;
+}
+.perguntas-frequentes summary .icone {
+    background-color: #e7e7e7;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perguntas-frequentes details[open] summary .icone {
+    background-color: var(--dark-green);
+    color: var(--white-yellow);
+}
+.perguntas-frequentes details[open] span {
+    width: 100%;
+    height: auto;
+    background-color: #e7e7e7;
+    padding: 2rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+}
+.section-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contato {
+    width: 60%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.textos-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.infos-contato-e-formulario {
+    height: auto;
+    border-radius: 2rem;
+    display: flex;
+    padding: 3rem;
+    background-color: white;
+}
+.infos-contato-e-formulario .lado-esquerdo, .infos-contato-e-formulario .lado-direito {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infos-contato-e-formulario .lado-esquerdo h1, .infos-contato-e-formulario .lado-direito h1{
+    margin-bottom: 2rem;
+    font-size: 22pt;
+    font-weight: 600;
+}
+.infos-contato-e-formulario .lado-esquerdo p, .infos-contato-e-formulario .lado-direito p{
+    font-size: 12pt;
+}
+.infos-contato-e-formulario .lado-esquerdo .detalhes-de-contato .infos-contato{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.infos-contato-e-formulario .lado-direito form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white-yellow);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    font-size: 14pt;
+}
+.infos-contato-e-formulario .lado-direito input {
+    height: 2rem;
+}
+.infos-contato-e-formulario .lado-direito input, .infos-contato-e-formulario .lado-direito textarea {
+    border: none;
+    outline: none;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid black;
+    background: none;
+    font-size: 14pt;
+}
+.infos-contato-e-formulario .lado-direito button {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 12pt;
+    border: none;
+    background-color: var(--dark-green);
+    color: var(--white-yellow);
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-top: 1rem;
+}
+.infos-contato-e-formulario .lado-direito button:hover {
+    background-color: #02575A;
+}
+.infos-contato-e-formulario .lado-direito h1 {
+    padding-left: 2.1rem;
+}

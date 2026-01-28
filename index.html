@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho do Chico</title>
+
+    <link rel="stylesheet" href="global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb4f09e113.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="root">
+        <!--Navbar Principal-->
+        <header class="navbar"></header>
+        <!--Navbar Responsiva-->
+        <header class="navbar-responsiva">
+            <div class="logo-hamburguer">
+                <div class="logo">
+                   <a href="#">
+                        <h1>Mercadinho de Chico</h1>
+                    </a>
+                </div>
+                <button type="button" class="hamburguer-menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav class="nav-responsiva">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#perguntas">Perguntas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section-banner" id="home">
+                <div class="banner">
+                    <div class="textos-banner">
+                        <h1>O frescor da feira direto para a sua mesa.</h1>
+                        <p>No Mercadinho do Chico, selecionamos os melhores produtos com o carinho que sua família merece. Preço baixo e qualidade em um só lugar.</p>
+                    </div>
+                    <a href="#" class="btn-pedido-online">Fazer Pedido Online</a>
+                </div>
+            </section>
+            <section class="section-economia" id="economia">
+                <div class="economia">
+                    <div class="textos-buttons">
+                        <div class="textos-economia">
+                            <span>Diferencial</span>
+                            <h1>Sua economia é nossa prioridade.</h1>
+                            <p>No Mercadinho do Chico, acreditamos que comer bem não precisa custar caro. Trabalhamos com produtores locais para garantir que você sempre encontre frutas e legumes fresquinhos todos os dias.</p>
+                        </div>
+                        <a href="#" class="btn-pedido-online">Fazer Pedido Online</a>
+                    </div>
+                    <div class="porquinho-img">
+                        <img src="/src/assets/porquinho-cash.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section-servicos" id="servicos">
+                <div class="servicos">
+                    <div class="textos-servicos">
+                            <span>Serviços</span>
+                            <h1>Tudo o que você precisa em um só lugar.</h1>
+                            <p>Descubra o que mais te agrada.</p>
+                    </div>
+                    <div class="boxs">
+                        <div class="box box01">
+                            <div class="lado-esquerdo">
+                                <div class="textos">
+                                    <h1>Hortifruti Selecionado.</h1>
+                                    <p>Frutas e verduras colhidas no dia para garantir o máximo de sabor e nutrientes.</p>
+                                </div>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="imagem">
+                                <img src="/src/assets/futas.png" alt="Frutas">
+                            </div>
+                        </div>
+                        <div class="box box02">
+                            <div class="lado-esquerdo">
+                                <h1>Açougue de Qualidade.</h1>
+                                <p>Cortes nobres e carnes frescas preparadas na hora pelos nossos especialistas.</p>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="imagem">
+                                <img src="/src/assets/carne.png" alt="Frutas">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whatsapp">
+                        <div class="lado-esquerdo">
+                            <div class="textos-whatsapp">
+                                <h1>Mais Tempo para o que importa.</h1>
+                                <p>Com nosso sistema de entrega rápida, você faz suas compras pelo WhatsApp ou site e recebe tudo em casa em até 2 horas. Conveniência para o seu dia a dia.</p>
+                            </div>
+                            <a href="#" class="btn-pedido-online">Fale Conosco</a>
+                        </div>
+                        <div class="imagem">
+                            <img src="/src/assets/whtasapp-3d.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-depoimentos" id="depoimentos">
+                <div class="depoimentos">
+                    <div class="textos-e-buttons-depoimentos">
+                        <span>Depoimentos</span>
+                        <h1>Depoimentos</h1>
+                        <p>Alguns depoimentos positivos sobre nossos serviços a atendimento.</p>
+                        <div class="buttons-depoimentos">
+                            <button class="btn-depoimento btn-depoimento-left"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="btn-depoimento btn-depoimento-right">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="avaliacoes">      
+                        <div class="comentarios comentario01">
+                            <p>"O melhor hortifruti da região! Os produtos do Chico são sempre os mais frescos e o atendimento é excelente."</p>
+                            <span>- Ana S.</span>
+                        </div>
+                        <div class="comentarios comentario02">
+                            <p>"Preços imbatíveis e a entrega é muito rápida. Não troco o Mercadinho do Chico por nenhum outro."</p>
+                            <span>– João Pedro.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-ofertas" id="ofertas">
+                <div class="ofertas">
+                    <div class="textos-servicos">
+                            <span>Categorias de Produtos</span>
+                            <h1>Ofertas da Semana</h1>
+                            <p>Acompanhe as nossas ofertas da semana</p>
+                    </div>
+                    <div class="boxs">
+                        <div class="box">
+                                <h1>Mercearia</h1>
+                                <p>Arroz, feijão e itens básicos com os melhores preços.</p>
+                                <a href="#">Saiba Mais</a>
+                        </div>
+                        <div class="box">
+                                <h1>Padaria</h1>
+                                <p>Pães quentinhos saindo a toda hora e bolos caseiros.</p>
+                                <a href="#">Saiba Mais</a>
+                        </div>
+                        <div class="box">
+                            <h1>Limpeza</h1>
+                            <p>Tudo para deixar sua casa brilhando sem gastar muito.</p>
+                            <a href="#">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-perguntas" id="perguntas">
+                <div class="perguntas">
+                    <div class="lado-esquerdo">
+                        <div class="textos-perguntas">
+                            <span>Perguntas Frequentes</span>
+                            <h1>Perguntas Frequentes</h1>
+                            <p>É muito comum recebermos algumas perguntas, algumas delas:</p>
+                        </div>
+                        <div class="imagem">
+                            <img src="/src/assets/personagem.png" alt="">
+                        </div>
+                    </div>
+                    <div class="perguntas-frequentes">
+                        <details>
+                            <summary>
+                                <p>Quais as formas de pagamento?</p>
+                                <div class="icone">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </summary>
+                            <span>Formas de pagamento aceitas: dinheiro, cartão de crédito e débito.</span>
+                        </details>
+                        <details>
+                            <summary>
+                                <p>Quais os horários de funcionamento?</p>
+                                <div class="icone">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </summary>
+                            <span>Funcionamos de segunda a sábado, das 7h às 22h, e aos domingos, das 8h às 20h.</span>
+                        </details>
+                        <details>
+                            <summary>
+                                <p>Vocês entregam em toda a cidade?</p>
+                                <div class="icone">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </summary>
+                            <span>Sim, fazemos entregas em toda a cidade. Consulte a taxa de entrega para sua região.</span>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section class="section-contato" id="contato">
+                <div class="contato">
+                    <div class="textos-contato">
+                        <span>Rodapé e Contato</span>
+                        <h1>Estamos aqui para atender você.</h1>
+                        <p>Entre em contato conosco para mais informações:</p>
+                    </div>
+                    <div class="infos-contato-e-formulario">
+                        <div class="lado-esquerdo">
+                            <div class="detalhes-de-contato">
+                                <h1>Detalhes de contato</h1>
+                                <div class="infos-contato">
+                                    <p><strong>Email:</strong> contato@mercearia.com</p>
+                                    <p><strong>Celular:</strong> (84) 9999-9999</p>
+                                    <p><strong>Endereço:</strong> Rua Doutor João Primênio - Centro</p>
+                                </div>
+                            </div>
+                            <p>Responderemos assim que possível.</p>
+                        </div>
+                        <div class="lado-direito">
+                            <h1>Envie uma Mensagem</h1>
+                            <form action="">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="email@gmail.com" id="email">
+                                <label for="">Mensagem</label>
+                                <textarea name="mensagem" id="mensagem" cols="30" rows="1" placeholder="Mensagem..."></textarea>
+                                <button type="submit">
+                                    Enviar Mensagem
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="src/components/Header/header.js"></script>
+    <script src="src/components/Fazer-Pedido-Button/fazer-pedido.js"></script>
+</body>
+</html>

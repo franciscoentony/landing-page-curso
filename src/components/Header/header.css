@@ -1,0 +1,80 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul{
+    width: 80%;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    width: auto;
+    height: 2.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+.navbar ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li:hover{
+    color: #FBF6EC;
+    background-color: #00373E;
+}
+.navbar-responsiva{
+    width: 100%;
+    display: none;
+    padding: 2rem 1rem;
+}
+.logo-hamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-hamburguer .logo h1 {
+    width: 10rem;
+    font-size: 1.5rem;
+    color: #00373E;
+}
+.logo-hamburguer .hamburguer-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.navbar-responsiva .nav-responsiva{
+    display: none;
+}
+.navbar-responsiva .nav-responsiva{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-responsiva .nav-responsiva ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 16pt;
+    margin-top: 2rem;
+    gap: 1rem;
+}

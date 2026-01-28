@@ -1,0 +1,146 @@
+@media screen and (max-width: 1080px) {
+    section {
+        padding: 0 1rem;
+    }  
+    .navbar{
+        display: none;
+    }
+    .navbar-responsiva{
+        display: block;
+        width: 100%;
+    }
+    .section-banner .banner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-banner .textos-banner{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     .economia, .economia .textos-economia, .economia .textos-buttons {
+        width: 100%;
+    }
+    .section-economia .economia{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 5rem 0;
+        overflow: hidden;
+    }
+    .section-economia .textos-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-economia .textos-economia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .porquinho-img {
+        z-index: -1;
+    }
+    .section-servicos .servicos{
+        width: 100%;
+    }
+    .servicos .textos-servicos {
+        width: 100%;
+    }
+    .servicos .boxs {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .servicos .boxs .box {
+        height: auto;
+    }
+    .servicos .whatsapp{
+        
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicos .whatsapp .lado-esquerdo{
+        width: 100%;
+        gap: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+    .servicos .whatsapp .lado-esquerdo .textos-whatsapp{
+        align-items: center;
+    }
+    .section-depoimentos .depoimentos {
+        width: 95%;
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .depoimentos .textos-e-buttons-depoimentos{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .depoimentos .textos-e-buttons-depoimentos p {
+        font-size: 16pt;
+    }
+    .depoimentos .buttons-depoimentos {
+        scale: 140%;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    .depoimentos .avaliacoes .comentarios{
+        height: auto;
+    }
+    .section-ofertas .ofertas, .ofertas .textos-servicos {
+        width: 100%;
+    }
+    .section-ofertas .ofertas .boxs{
+        flex-direction: column;
+    }
+    .section-ofertas .ofertas .boxs p , .section-ofertas .ofertas .boxs a{
+        font-size: 16pt;
+    }
+    .section-perguntas .perguntas {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+    }
+    .section-perguntas .perguntas .lado-esquerdo {
+        align-items: center;
+    }
+    .section-perguntas .perguntas .lado-esquerdo .textos-perguntas {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .section-perguntas .perguntas .lado-esquerdo .imagem {
+        scale: 80%;
+        margin-top: 4rem;
+    }
+    .section-contato .contato{
+        width: 100%;
+    }
+    .section-contato .contato .textos-contato{
+        align-items: center;
+        text-align: center;
+    }
+    .section-contato .contato .infos-contato-e-formulario{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .section-contato .contato .infos-contato-e-formulario .lado-direito form{
+        padding: 2rem 2rem;
+    }
+
+}
