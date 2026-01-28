@@ -1,6 +1,6 @@
-@import url('/src/components/Header/header.css');
-@import url('/src/components/Fazer-Pedido-Button/fazer-pedido.css');
-@import url('/responsividade.css');
+@import url('src/components/Header/header.css');
+@import url('src/components/Fazer-Pedido-Button/fazer-pedido.css');
+@import url('responsividade.css');
 
 * {
     margin: 0;
